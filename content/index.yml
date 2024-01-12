@@ -1,0 +1,116 @@
+title: R2J - Contabilidade
+description: A contabilidade digital é uma abordagem inovadora para a gestão financeira e contábil que utiliza tecnologia avançada e ferramentas digitais para coletar, processar, analisar e relatar informações financeiras conforme estabelecido em cada nicho.
+quero_falar:
+  title: O futuro do seu negócio depende de você!
+  links:
+    - label: Quero falar com vocês!
+      size: xl
+contabilidade_digital:
+  title: Você já ouviu falar em contabilidade Digital?
+  description: A contabilidade digital é uma abordagem inovadora para a gestão financeira e contábil que utiliza tecnologia avançada e ferramentas digitais para coletar, processar, analisar e relatar informações financeiras conforme estabelecido em cada nicho.
+  images:
+    - src: /img/contabilidade-digital-0.png
+      alt: Image alt text
+    - src: /img/contabilidade-digital-1.png
+      alt: Image alt text
+    - src: /img/contabilidade-digital-2.png
+      alt: Image alt text
+    - src: /img/contabilidade-digital-3.png
+      alt: Image alt text
+    - src: /img/contabilidade-digital-4.png
+      alt: Image alt text
+    - src: /img/contabilidade-digital-5.png
+      alt: Image alt text
+    - src: /img/contabilidade-digital-6.png
+      alt: Image alt text
+    - src: /img/contabilidade-digital-7.png
+      alt: Image alt text
+sobre_nos:
+  title: Sobre Nós
+  description: Fundada acerca de princípios, a R2J, além de assegurar conformidade fiscal, proporciona uma excelente otimização burocrática e uma análise de dados contábeis para tomada de decisões estratégicas para o sucesso do seu negócio.
+  image: 
+    src: /img/sobre-nos.png
+    alt: Image alt text
+  link:
+    label: Saiba Mais >
+    size: xl
+segmentos:
+  title: Segmentos
+  description: A R2J é uma empresa de contabilidade especializada em diversos segmentos, com o objetivo de atender as necessidades de cada cliente.
+  items:
+    - icon: /img/segmento-mei.svg
+      title: MEI
+      description: Criação, regularização, alteração, declaração anual e assessoria completa
+      bg: '#2B4857'
+      class: py-10 lg:py-20 px-6 lg:px-16
+    - icon: /img/segmento-profissionais-saude.svg
+      title: Profissionais da Saúde
+      description: Especialidade no ramo da saúde, conforme complexidades regulatórias e fiscais específicas.
+      bg: '#2A3640'
+      class: py-10 lg:py-20 px-6 lg:px-16
+    - icon: /img/segmento-pessoal.svg
+      title: Pessoal
+      description: Assessoria fiscal trabalhista completa.
+      bg: '#2A2C34'
+      class: py-10 lg:py-20 px-6 lg:px-16
+    - icon: /img/segmento-comercio-vendas.svg
+      title: Comércio e Vendas
+      description: Abertura, regulamentação, fiscalização e cálculos trabalhistas.
+      bg: '#2B4857' 
+      class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
+    - icon: /img/segmento-assessoria-especializada.svg
+      title: Assessoria Personalizada
+      description: Planejamento tributário, declaração de IR, certificações e licenças.
+      bg: '#2A3640' 
+      class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
+    - icon: /img/sagmento-empresas-digitais.svg
+      title: Empresas Digitais
+      description: Legalização, regulamentação, e assessoria personalizada.
+      bg: '#2A2C34'
+      class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
+profiles:
+  - name: Júnior Almeida
+    reverse: false
+    descriptions:
+      - Desempenhamos o papel fundamental na manutenção da saúde financeira, garantindo conformidade com as leis fiscais e regulamentações de todo negócio.
+      - Facilitaremos a sua tomada de decisões estratégicas, fazendo com que o seu negócio otimize o crescimento e eficiencia operacional.
+    photo:
+      src: /img/profile-junior.png
+      alt: Image alt text
+  - name: Rone Ramos
+    reverse: true
+    descriptions:
+      - Profissional especializado no ramo da saúde, entendendo as complexidades regulatórias e fiscais específicas
+      - Oferecemos Expertise em gestão, e proporcionamos uma visão clara do que é crucial para a eficiência operacional e o sucesso sustentável no setor
+    photo:
+      src: /img/profile-rone.png
+      alt: Image alt text
+clientes:
+  title: Alguns dos nossos Clientes
+  description: 'Desde o começo, prestamos serviços de confiança a nossos clientes. Tivemos a honra de sermos a empresa na escolha das seguintes corporações:'
+  items:
+    - src: /img/cliente-risodonto.png
+      alt: Risodonto
+    - src: /img/cliente-centclin.png
+      alt: Centclin
+    - src: /img/cliente-amanda-arcanjo.png
+      alt: Dra. Amanda Arcanjo
+    - src: /img/cliente-cor.png
+      alt: COR Centro Odontológico do Retiro
+    - src: /img/cliente-super-martins.png
+      alt: Supermercado Martins
+    - src: /img/cliente-teddy.png
+      alt: Teddy
+    - src: /img/cliente-soberana.png
+      alt: Soberana
+    - src: /img/cliente-central.png
+      alt: Central do Sorriso
+    - src: /img/cliente-vivere.png
+      alt: Clínica Vivere
+    - src: /img/cliente-casa-construcao.png
+      alt: Casa da Construção
+    - src: /img/cliente-nossa-clinica.png
+      alt: Nossa Clínica
+    - src: /img/cliente-acai-tropicale.png
+      alt: Acaí Tropicale
+    
