@@ -75,18 +75,6 @@ export default defineAppConfig({
       bottom: {
         wrapper: 'border-t border-gray-600'
       }
-    },
-    pricing: {
-      card: {
-        highlight: 'ring-gray-900 dark:ring-white',
-        features: {
-          item: {
-            icon: {
-              base: 'text-gray-900 dark:text-white'
-            }
-          }
-        }
-      }
     }
   }
 })

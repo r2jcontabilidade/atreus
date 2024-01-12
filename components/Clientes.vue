@@ -1,17 +1,16 @@
 <template>
   <div class="clientes px-20">
-    <div class="title">{{ title }}</div>
-    <div class="description">{{ description }}</div>
+    <div class="text-[54px] font-bold text-[#404351] dark:text-white">
+      {{ title }}
+    </div>
+    <div class="text-[20px] text-[#404351] dark:text-white">
+      {{ description }}
+    </div>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20">
-      <div
-        class="cliente"
-        v-for="(cliente, idx) in items"
-        :key="idx"
-      >
+      <div class="cliente" v-for="(cliente, idx) in items" :key="idx">
         <div class="image">
-          <img :src="cliente.src" :alt="cliente.alt"/>
+          <img :src="cliente.src" :alt="cliente.alt" />
         </div>
-        
       </div>
     </div>
   </div>
@@ -64,15 +63,3 @@ const { ui, attrs } = useUI(
   true
 )
 </script>
-
-<style scoped lang="scss">
-.title {
-  font-size: 54px;
-  font-weight: bold;
-  color: #404351;
-}
-.description {
-  font-size: 20px;
-  color: #404351;
-}
-</style>

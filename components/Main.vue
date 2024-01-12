@@ -1,16 +1,20 @@
 <template>
-  <main :class="ui.wrapper" v-bind="attrs">
+  <main
+    class="bg-[#E4E1E1] dark:bg-gray-800"
+    :class="ui.wrapper"
+    v-bind="attrs"
+  >
     <slot />
   </main>
 </template>
 
 <script setup lang="ts">
 const config = {
-  wrapper: 'min-h-[calc(100vh-var(--header-height))]'
+  wrapper: 'min-h-[calc(100vh-var(--header-height))]',
 }
 
 defineOptions({
-  inheritAttrs: false
+  inheritAttrs: false,
 })
 
 const props = defineProps<{
@@ -18,5 +22,11 @@ const props = defineProps<{
   class?: any
 }>()
 
-const { ui, attrs } = useUI('main', toRef(props, 'ui'), config, toRef(props, 'class'), true)
+const { ui, attrs } = useUI(
+  'main',
+  toRef(props, 'ui'),
+  config,
+  toRef(props, 'class'),
+  true
+)
 </script>
