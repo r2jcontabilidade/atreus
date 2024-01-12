@@ -1,6 +1,6 @@
 <template>
   <main
-    class="bg-[#E4E1E1] dark:bg-gray-800"
+    class="bg-[#E4E1E1] dark:bg-cool-800"
     :class="ui.wrapper"
     v-bind="attrs"
   >

@@ -30,7 +30,7 @@
 import type { Link } from '#types'
 
 const config = {
-  wrapper: 'relative bg-cool-800 text-white',
+  wrapper: 'relative text-white bg-cool-800 dark:bg-gray-950',
   top: {
     wrapper: '',
     container: 'py-8 lg:py-12'
