@@ -2,9 +2,8 @@ title: R2J - Contabilidade
 description: A contabilidade digital é uma abordagem inovadora para a gestão financeira e contábil que utiliza tecnologia avançada e ferramentas digitais para coletar, processar, analisar e relatar informações financeiras conforme estabelecido em cada nicho.
 quero_falar:
   title: O futuro do seu negócio depende de você!
-  links:
-    - label: Quero falar com vocês!
-      size: xl
+  link:
+    label: Quero falar com vocês!
 contabilidade_digital:
   title: Você já ouviu falar em contabilidade Digital?
   description: A contabilidade digital é uma abordagem inovadora para a gestão financeira e contábil que utiliza tecnologia avançada e ferramentas digitais para coletar, processar, analisar e relatar informações financeiras conforme estabelecido em cada nicho.
@@ -33,7 +32,7 @@ sobre_nos:
     alt: Image alt text
   link:
     label: Saiba Mais >
-    size: xl
+    size: sm
 segmentos:
   title: Segmentos
   description: A R2J é uma empresa de contabilidade especializada em diversos segmentos, com o objetivo de atender as necessidades de cada cliente.

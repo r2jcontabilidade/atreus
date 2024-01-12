@@ -1,18 +1,17 @@
 <template>
   <div
-    class="profile flex items-center gap-9 px-20"
-    :class="reverse ? 'flex-row-reverse' : 'flex-row'"
+    :class="[ui.wrapper, reverse ? 'sm:flex-row-reverse' : 'sm:flex-row']"
+    v-bind="attrs"
   >
-    <div class="w-[calc(33.3333% - 5rem)]">
+    <div class="sm:w-[calc(33.3333% - 5rem)]">
       <img :src="photo.src" :alt="photo.alt" />
     </div>
-    <div class="w-2/3">
-      <div class="name" :class="reverse ? 'text-right' : 'text-left'">
+    <div class="sm:w-2/3">
+      <div :class="[ui.name, reverse ? 'sm:text-right' : 'text-left']">
         {{ name }}
       </div>
       <p
-        class="description pb-6"
-        :class="reverse ? 'text-right' : 'text-left'"
+        :class="[ui.description, reverse ? 'sm:text-right' : 'text-left']"
         v-for="(description, index) in descriptions"
         :key="index"
       >
@@ -24,14 +23,9 @@
 
 <script setup lang="ts">
 const config = {
-  wrapper: 'relative',
-  container: 'gap-16 sm:gap-y-24',
-  base: '',
-  headline: 'mb-10',
-  title:
-    'text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl',
-  description: 'mt-6 text-lg tracking-tight text-gray-600 dark:text-gray-300',
-  links: 'mt-10 flex flex-wrap gap-x-6 gap-y-3',
+  wrapper: 'relative flex flex-col items-center gap-9 sm:px-20',
+  name: 'mb-6 text-2xl sm:text-[54px] font-bold tracking-tight text-[#2c8aa7] ',
+  description: 'mb-6 text-lg/6 sm:text-2xl/9',
 }
 
 defineOptions({

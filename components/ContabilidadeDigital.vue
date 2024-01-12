@@ -1,13 +1,13 @@
 <template>
-  <div class="contabilidade-digital flex flex-col gap-10">
-    <div class="title">{{ title }}</div>    
-    <div class="description">
-      <UDivider class="my-6" />
+  <div :class="ui.wrapper" v-bind="attrs">
+    <div :class="ui.title">{{ title }}</div>
+    <div :class="ui.description">
+      <UDivider class="my-6" :ui="ui" />
       {{ description }}
     </div>
-    <div class="images pt-10">
+    <div class="mt-10">
       <BasePageGrid>
-        <div class="image" v-for="(item, index) in images" :key="index">
+        <div v-for="(item, index) in images" :key="index">
           <img :src="item.src" :alt="item.alt" />
         </div>
       </BasePageGrid>
@@ -16,52 +16,43 @@
 </template>
 
 <script setup lang="ts">
-import type { Button } from '#ui/types'
-
 const config = {
-  wrapper: 'relative',
-  container: 'gap-16 sm:gap-y-24',
-  base: '',
-  headline: 'mb-10',
-  title: 'text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl',
-  description: 'mt-6 text-lg tracking-tight text-gray-600 dark:text-gray-300',
-  links: 'mt-10 flex flex-wrap gap-x-6 gap-y-3'
+  wrapper: 'relative flex flex-col sm:gap-10',
+  title: 'text-2xl sm:text-[54px] font-bold tracking-tight text-[#2c8aa7] text-center',
+  description: 'text-center sm:text-left text-lg/8 sm:text-3xl/10',
+  border: {
+    base: 'border-gray-800',
+  },
 }
 
 defineOptions({
-  inheritAttrs: false
+  inheritAttrs: false,
 })
 
-const props = withDefaults(defineProps<{
-  title?: string
-  description?: string
-  links?: (Button & { click?: Function })[]
-  orientation?: 'vertical' | 'horizontal'
-  ui?: Partial<typeof config>
-  class?: any
-  images?: any[]
-}>(), {
-  title: '',
-  description: '',
-  links: () => [],
-  orientation: 'vertical',
-  ui: () => ({}),
-  class: undefined,
-  images: () => []
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    description?: string
+    ui?: Partial<typeof config>
+    class?: any
+    images?: any[]
+  }>(),
+  {
+    title: '',
+    description: '',
+    links: () => [],
+    orientation: 'vertical',
+    ui: () => ({}),
+    class: undefined,
+    images: () => [],
+  }
+)
 
-const { ui, attrs } = useUI('landing.hero', toRef(props, 'ui'), config, toRef(props, 'class'), true)
+const { ui, attrs } = useUI(
+  'landing.section.contabilidade-digital',
+  toRef(props, 'ui'),
+  config,
+  toRef(props, 'class'),
+  true
+)
 </script>
-
-<style scoped lang="scss">
-.title {
-  font-size: 54px;
-  font-weight: bold;
-  color: #2c8aa7;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.description {
-  font-size: 27px;
-}
-</style>
