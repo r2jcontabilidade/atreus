@@ -19,7 +19,7 @@
 const config = {
   wrapper: 'relative grid grid-cols-1 lg:grid-cols-3',
   segment: 'grid grid-cols-1 gap-2',
-  title: 'text-2xl sm:text-4xl tracking-tight text-center',
+  title: 'text-2xl sm:text-4xl tracking-tight text-center text-white',
   description:
     'sm:text-lg text-center tracking-tight text-[#fffbe0] dark:text-[#fffbe0] pb-10',
   icon: 'flex justify-center pt-10',
