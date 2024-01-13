@@ -53,7 +53,12 @@ export default defineAppConfig({
       default: {
         size: 'md',
         color: 'black'
-      }
+      },
+      icon: {
+        size: {
+          ex: 'w-20 h-20'
+        }
+      },
     },
     input: {
       rounded: 'rounded-full'

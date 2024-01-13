@@ -21,8 +21,8 @@ import type { Button } from '#ui/types'
 
 const config = {
   wrapper: 'relative lg:px-20',
-  title: 'text-[54px] font-bold text-[#404351] dark:text-white',
-  description: 'text-[20px] text-[#404351] dark:text-white',
+  title: 'text-2xl sm:text-[54px] font-bold tracking-tight text-[#404351] dark:text-white',
+  description: 'mt-8 text-lg/6 sm:text-2xl/8 text-[#404351] dark:text-white',
   items: 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20',
 }
 
@@ -34,8 +34,6 @@ const props = withDefaults(
   defineProps<{
     title?: string
     description?: string
-    links?: (Button & { click?: Function })[]
-    orientation?: 'vertical' | 'horizontal'
     ui?: Partial<typeof config>
     class?: any
     items?: any[]
@@ -43,8 +41,6 @@ const props = withDefaults(
   {
     title: '',
     description: '',
-    links: () => [],
-    orientation: 'vertical',
     ui: () => ({}),
     class: undefined,
     items: () => [],
