@@ -96,7 +96,7 @@ const config = {
     body: 'px-4 sm:px-6 pt-3 pb-6'
   },
   button: {
-    base: 'lg:hidden',
+    base: 'lg:hidden text-white',
     icon: {
       open: 'i-heroicons-bars-3',
       close: 'i-heroicons-x-mark-20-solid'
