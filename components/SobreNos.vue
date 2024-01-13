@@ -22,7 +22,7 @@ const config = {
   title:
     'text-2xl sm:text-[54px] font-bold tracking-tight text-[#2c8aa7] text-center sm:text-left',
   description: 'mt-8 text-center sm:text-left text-lg/6 sm:text-2xl/9',
-  link: 'font-bold bg-[#2c8aa7] sm:text-2xl hover:bg-[#2c8aa7] hover:opacity-80',
+  link: 'font-bold sm:text-2xl bg-[#2c8aa7] dark:bg-[#2c8aa7] dark:text-white hover:bg-[#2c8aa7] hover:opacity-80 dark:hover:bg-[#2c8aa7] dark:hover:opacity-80',
 }
 
 defineOptions({

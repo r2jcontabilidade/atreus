@@ -27,7 +27,7 @@ import type { Button } from '#ui/types'
 const config = {
   wrapper: 'flex flex-col md:flex-row justify-between items-center gap-14 ',
   title: 'text-4xl tracking-tight text-gray-900 dark:text-white sm:text-7xl',
-  link: 'font-bold md:text-[33px] bg-[#2c8aa7] sm:text-[33px] sm:leading-[70px] hover:bg-[#2c8aa7] hover:opacity-80',
+  link: 'font-bold md:text-[33px] sm:text-[33px] sm:leading-[70px] bg-[#2c8aa7] dark:bg-[#2c8aa7] dark:text-white hover:bg-[#2c8aa7] hover:opacity-80 dark:hover:bg-[#2c8aa7] dark:hover:opacity-80',
 }
 
 defineOptions({

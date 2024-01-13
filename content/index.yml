@@ -41,32 +41,32 @@ segmentos:
       title: MEI
       description: Criação, regularização, alteração, declaração anual e assessoria completa
       bg: '#2B4857'
-      class: py-10 lg:py-20 px-6 lg:px-16
+      $class: py-10 sm:py-20 px-6 sm:px-16
     - icon: /img/segmento-profissionais-saude.svg
       title: Profissionais da Saúde
       description: Especialidade no ramo da saúde, conforme complexidades regulatórias e fiscais específicas.
       bg: '#2A3640'
-      class: py-10 lg:py-20 px-6 lg:px-16
+      $class: py-10 lg:py-20 px-6 lg:px-16
     - icon: /img/segmento-pessoal.svg
       title: Pessoal
       description: Assessoria fiscal trabalhista completa.
       bg: '#2A2C34'
-      class: py-10 lg:py-20 px-6 lg:px-16
+      $class: py-10 lg:py-20 px-6 lg:px-16
     - icon: /img/segmento-comercio-vendas.svg
       title: Comércio e Vendas
       description: Abertura, regulamentação, fiscalização e cálculos trabalhistas.
       bg: '#2B4857' 
-      class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
+      $class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
     - icon: /img/segmento-assessoria-especializada.svg
       title: Assessoria Personalizada
       description: Planejamento tributário, declaração de IR, certificações e licenças.
       bg: '#2A3640' 
-      class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
+      $class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
     - icon: /img/sagmento-empresas-digitais.svg
       title: Empresas Digitais
       description: Legalização, regulamentação, e assessoria personalizada.
       bg: '#2A2C34'
-      class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
+      $class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
 profiles:
   - name: Júnior Almeida
     reverse: false

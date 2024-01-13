@@ -1,33 +1,28 @@
 <template>
-  <div class="segmentos grid grid-cols-1 lg:grid-cols-3 ">
+  <div :class="ui.wrapper" v-bind="attrs">
     <div
-      class="segmento grid grid-cols-1 gap-2"
-      :class="segmento.class"
+      :class="[ui.segment, segmento.$class]"
       :style="{ backgroundColor: segmento.bg }"
       v-for="(segmento, idx) in items"
       :key="idx"
     >
-      <div class="icon flex justify-center">
+      <div :class="ui.icon">
         <img :src="segmento.icon" />
       </div>
-      <div class="title">{{ segmento.title }}</div>
-      <div class="description">{{ segmento.description }}</div>
+      <div :class="ui.title">{{ segmento.title }}</div>
+      <div :class="ui.description">{{ segmento.description }}</div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { Button } from '#ui/types'
-
 const config = {
-  wrapper: 'relative',
-  container: 'gap-16 sm:gap-y-24',
-  base: '',
-  headline: 'mb-10',
-  title:
-    'text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl',
-  description: 'mt-6 text-lg tracking-tight text-gray-600 dark:text-gray-300',
-  links: 'mt-10 flex flex-wrap gap-x-6 gap-y-3',
+  wrapper: 'relative grid grid-cols-1 lg:grid-cols-3',
+  segment: 'grid grid-cols-1 gap-2',
+  title: 'text-2xl sm:text-4xl tracking-tight text-center',
+  description:
+    'sm:text-lg text-center tracking-tight text-[#fffbe0] dark:text-[#fffbe0] pb-10',
+  icon: 'flex justify-center pt-10',
 }
 
 defineOptions({
@@ -36,19 +31,11 @@ defineOptions({
 
 const props = withDefaults(
   defineProps<{
-    title?: string
-    description?: string
-    links?: (Button & { click?: Function })[]
-    orientation?: 'vertical' | 'horizontal'
     ui?: Partial<typeof config>
     class?: any
     items?: any[]
   }>(),
   {
-    title: '',
-    description: '',
-    links: () => [],
-    orientation: 'vertical',
     ui: () => ({}),
     class: undefined,
     items: () => [],
@@ -56,23 +43,10 @@ const props = withDefaults(
 )
 
 const { ui, attrs } = useUI(
-  'landing.hero',
+  'landing.section.segmentos',
   toRef(props, 'ui'),
   config,
   toRef(props, 'class'),
   true
 )
 </script>
-
-<style scoped lang="scss">
-.title {
-  font-size: 31px;
-  color: #ffffff;
-  text-align: center;
-}
-.description {
-  font-size: 18px;
-  color: #fffbe0;
-  text-align: center;
-}
-</style>
