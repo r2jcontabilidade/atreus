@@ -14,8 +14,7 @@
         class="rounded-[16px]"
         :src="image.src"
         :alt="image.alt"
-        width="1277"
-        height="912"
+        :rawTransformations="['c_pad,h_560,w_784']"
       />
     </div>
   </div>
