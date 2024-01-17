@@ -8,9 +8,7 @@
         class="rounded-[16px]"
         :src="photo.src"
         :alt="photo.alt"
-        sizes="100vw"
-        width="456"
-        height="620"
+        :rawTransformations="['c_pad,h_543,w_388']"
       />
     </div>
     <div class="sm:w-2/3">
