@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/fontaine',
     '@nuxtjs/cloudinary',
+    'nuxt-gtag',
   ],
   ui: {
     icons: ['heroicons', 'simple-icons'],
@@ -29,6 +30,9 @@ export default defineNuxtConfig({
   // Images
   cloudinary: {
     cloudName: 'dabaxwgki',
+  },
+  gtag: {
+    id: 'G-MXM5ND6SGJ'
   },
   // Devtools / Typescript
   devtools: { enabled: true },
