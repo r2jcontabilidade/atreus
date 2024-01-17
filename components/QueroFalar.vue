@@ -19,8 +19,9 @@
       <CldImage
         src="r2j/capas/capa-01-2_ck6h80"
         alt="R2J Contabilidade - Quero falar com um especialista"
-        width="590"
-        height="592"
+        sizes="100vw"
+        width="570"
+        height="572"
       />
     </div>
   </div>
