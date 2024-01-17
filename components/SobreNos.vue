@@ -10,7 +10,13 @@
       </div>
     </div>
     <div class="sm:basis-2/3">
-      <img :src="image.src" :alt="image.alt" />
+      <CldImage
+        class="rounded-[16px]"
+        :src="image.src"
+        :alt="image.alt"
+        width="1277"
+        height="912"
+      />
     </div>
   </div>
 </template>

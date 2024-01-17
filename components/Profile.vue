@@ -4,7 +4,13 @@
     v-bind="attrs"
   >
     <div class="sm:w-[calc(33.3333% - 5rem)]">
-      <img :src="photo.src" :alt="photo.alt" />
+      <CldImage
+        class="rounded-[16px]"
+        :src="photo.src"
+        :alt="photo.alt"
+        width="456"
+        height="620"
+      />
     </div>
     <div class="sm:w-2/3">
       <div :class="[ui.name, reverse ? 'sm:text-right' : 'text-left']">

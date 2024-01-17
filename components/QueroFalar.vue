@@ -16,7 +16,12 @@
       </div>
     </div>
     <div>
-      <img src="/img/foto-quero-falar.png" alt="Quero falar" />
+      <CldImage
+        src="r2j/capas/capa-01-2_ck6h80"
+        alt="R2J Contabilidade - Quero falar com um especialista"
+        width="590"
+        height="592"
+      />
     </div>
   </div>
 </template>

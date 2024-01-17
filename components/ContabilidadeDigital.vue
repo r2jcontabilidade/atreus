@@ -8,7 +8,13 @@
     <div class="mt-10">
       <BasePageGrid>
         <div v-for="(item, index) in images" :key="index">
-          <img :src="item.src" :alt="item.alt" />
+          <CldImage
+            class="rounded-[16px]"
+            :src="item.src"
+            :alt="item.alt"
+            width="388"
+            height="384"
+          />
         </div>
       </BasePageGrid>
     </div>

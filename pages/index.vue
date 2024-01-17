@@ -14,7 +14,12 @@ useSeoMeta({
 <template>
   <div>
     <LandingHero>
-      <img src="/img/capa.png" alt="Hero" />
+      <CldImage
+        src="r2j/capas/capa-00_y1kop9"
+        alt="R2J Contabilidade"
+        width="1223"
+        height="657"
+      />
     </LandingHero>
 
     <LandingSection id="quero-falar">

@@ -8,27 +8,27 @@ contabilidade_digital:
   title: Você já ouviu falar em contabilidade Digital?
   description: A contabilidade digital é uma abordagem inovadora para a gestão financeira e contábil que utiliza tecnologia avançada e ferramentas digitais para coletar, processar, analisar e relatar informações financeiras conforme estabelecido em cada nicho.
   images:
-    - src: /img/contabilidade-digital-0.png
+    - src: r2j/segmentos/1_gx5mzn
       alt: Image alt text
-    - src: /img/contabilidade-digital-1.png
+    - src: r2j/segmentos/2_oel8bp
       alt: Image alt text
-    - src: /img/contabilidade-digital-2.png
+    - src: r2j/segmentos/3_revdn2
       alt: Image alt text
-    - src: /img/contabilidade-digital-3.png
+    - src: r2j/segmentos/4_ihgjmy
       alt: Image alt text
-    - src: /img/contabilidade-digital-4.png
+    - src: r2j/segmentos/5_oesflb
       alt: Image alt text
-    - src: /img/contabilidade-digital-5.png
+    - src: r2j/segmentos/6_mmyl1w
       alt: Image alt text
-    - src: /img/contabilidade-digital-6.png
+    - src: r2j/segmentos/7_f6vyjf
       alt: Image alt text
-    - src: /img/contabilidade-digital-7.png
+    - src: r2j/segmentos/8_yoyoqx
       alt: Image alt text
 sobre_nos:
   title: Sobre Nós
   description: Fundada acerca de princípios, a R2J, além de assegurar conformidade fiscal, proporciona uma excelente otimização burocrática e uma análise de dados contábeis para tomada de decisões estratégicas para o sucesso do seu negócio.
   image: 
-    src: /img/sobre-nos.png
+    src: r2j/capas/capa-02_ruu7om
     alt: Image alt text
   link:
     label: Saiba Mais >
@@ -74,7 +74,7 @@ profiles:
       - Desempenhamos o papel fundamental na manutenção da saúde financeira, garantindo conformidade com as leis fiscais e regulamentações de todo negócio.
       - Facilitaremos a sua tomada de decisões estratégicas, fazendo com que o seu negócio otimize o crescimento e eficiencia operacional.
     photo:
-      src: /img/profile-junior.png
+      src: r2j/profiles/jr-03_es5kzk
       alt: Image alt text
   - name: Rone Ramos
     reverse: true
@@ -82,34 +82,46 @@ profiles:
       - Profissional especializado no ramo da saúde, entendendo as complexidades regulatórias e fiscais específicas
       - Oferecemos Expertise em gestão, e proporcionamos uma visão clara do que é crucial para a eficiência operacional e o sucesso sustentável no setor
     photo:
-      src: /img/profile-rone.png
+      src: r2j/profiles/rone-01_rj4zqb
       alt: Image alt text
 clientes:
   title: Alguns dos nossos Clientes
   description: 'Desde o começo, prestamos serviços de confiança a nossos clientes. Tivemos a honra de sermos a empresa na escolha das seguintes corporações:'
   items:
-    - src: /img/cliente-risodonto.png
+    - src: r2j/clientes/risodonto_q3j87e
       alt: Risodonto
-    - src: /img/cliente-centclin.png
+      transform: ''
+    - src: r2j/clientes/centclin_wr4jky
       alt: Centclin
-    - src: /img/cliente-amanda-arcanjo.png
+      transform: ''
+    - src: r2j/clientes/dra-amanda-arcanjo_osdfsh
       alt: Dra. Amanda Arcanjo
-    - src: /img/cliente-cor.png
+      transform: ''
+    - src: r2j/clientes/cor_tkv2fo
       alt: COR Centro Odontológico do Retiro
-    - src: /img/cliente-super-martins.png
+      transform: 'b_rgb:ffffff,c_pad,h_240,w_312'
+    - src: r2j/clientes/super-martins_ftgt2l
       alt: Supermercado Martins
-    - src: /img/cliente-teddy.png
+      transform: 'b_rgb:016636,c_pad,h_240,w_312'
+    - src: r2j/clientes/teddy_ffmgog
       alt: Teddy
-    - src: /img/cliente-soberana.png
+      transform: 'b_rgb:FFFFFF,c_pad,h_240,w_312'
+    - src: r2j/clientes/soberana_a0v7c1
       alt: Soberana
-    - src: /img/cliente-central.png
+      transform: ''
+    - src: r2j/clientes/central-do-sorriso_p7ghsj
       alt: Central do Sorriso
-    - src: /img/cliente-vivere.png
+      transform: 'b_rgb:ca7c72,c_pad,h_240,w_312'
+    - src: r2j/clientes/clinica-vivere_dgf3vs
       alt: Clínica Vivere
-    - src: /img/cliente-casa-construcao.png
+      transform: ''
+    - src: r2j/clientes/casa-da-construcao_lco3zd
       alt: Casa da Construção
-    - src: /img/cliente-nossa-clinica.png
+      transform: 'b_rgb:ffffff,c_pad,h_240,w_312'
+    - src: r2j/clientes/bm0zu4cicmt4wls3lamq
       alt: Nossa Clínica
-    - src: /img/cliente-acai-tropicale.png
+      transform: 'c_crop,h_770,w_1000/b_auto:border_gradient:2:horizontal,c_pad,h_240,w_312'
+    - src: r2j/clientes/acai-tropicale_cevudt
       alt: Acaí Tropicale
+      transform: 'c_pad,h_240,w_312'
     
