@@ -49,7 +49,7 @@
 
     <template #left>
       <p class="text-gray-400 text-sm">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+        R2J CONTABILIDADE LTDA CNPJ: 47.922.024/0001-61
       </p>
     </template>
 
