@@ -6,6 +6,19 @@
   </Main>
 
   <Footer />
+
+  <UButton
+    class="fixed bottom-4 right-4"
+    icon="i-simple-icons-whatsapp"
+    size="xl"
+    to="https://api.whatsapp.com/send?phone=5575981055945"
+    target="_blank"
+    aria-label="WhatsApp"
+    color="emerald"
+    square
+    variant="solid"
+  >
+  </UButton>
 </template>
 
 <script setup lang="ts">
