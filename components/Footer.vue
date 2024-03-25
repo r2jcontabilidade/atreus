@@ -6,6 +6,7 @@
         <div :class="ui.top.contact">
           <div :class="ui.top.subtitle">Entre em contato</div>
           <div class="phone">(75) 98105 5945</div>
+          <div class="e-mail">contato@r2jcontabilidade.com.br</div>
           <div class="address">
             <p>Praça wiston churchill, 178, Ponto Central</p>
             <p>Feira de Santana-BA</p>
