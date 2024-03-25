@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@nuxtjs/cloudinary',
     '@zadigetvoltaire/nuxt-gtm',
+    'nuxt3-meta-pixel',
   ],
   ui: {
     icons: ['heroicons', 'simple-icons'],
@@ -44,6 +45,12 @@ export default defineNuxtConfig({
     ignoredViews: ['homepage'], // Don't trigger events for specified router names (optional)
     trackOnNextTick: false, // Whether or not call trackView in Vue.nextTick
     devtools: true, // (optional)
+  },
+  facebook: {
+    track: 'PageView',
+    pixelId: '2302865363217512',
+    autoPageView: true,
+    disabled: false
   },
   // Devtools / Typescript
   devtools: { enabled: true },
