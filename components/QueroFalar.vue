@@ -11,6 +11,7 @@
           to="https://api.whatsapp.com/send?phone=5575981055945"
           block
         >
+          <UIcon name="i-simple-icons-whatsapp" />
           {{ link.label }}
         </UButton>
       </div>
