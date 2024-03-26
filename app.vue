@@ -1,4 +1,6 @@
 <template>
+  <TopBar />
+  
   <Header />
 
   <Main>
