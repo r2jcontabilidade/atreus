@@ -2,12 +2,33 @@ import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default <Partial<Config>>{
+  // Ícones definidos em content/index.yml não são vistos pelo scanner do Tailwind
+  safelist: ['i-heroicons-shield-check', 'i-heroicons-clipboard-document-check', 'i-heroicons-chart-bar'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Nunito', 'Nunito fallback', ...defaultTheme.fontFamily.sans]
+        sans: ['Figtree', 'Figtree fallback', ...defaultTheme.fontFamily.sans],
+        display: ['Sora', 'Sora fallback', ...defaultTheme.fontFamily.sans]
       },
       colors: {
+        r2j: {
+          50: '#EEF7FA',
+          100: '#E6F1F5',
+          200: '#C3E1EA',
+          300: '#7FCBE0',
+          400: '#4AAAC6',
+          500: '#2C8AA7',
+          600: '#1E7894',
+          700: '#155A70',
+          800: '#133746',
+          900: '#0F2A35',
+          950: '#0A1E26'
+        },
+        ink: '#10212A',
+        muted: '#4B5C66',
+        line: '#DCE4E8',
+        ground: '#F3F6F7',
+        mist: '#A9BFC8',
         background: 'rgb(var(--ui-background) / <alpha-value>)',
         foreground: 'rgb(var(--ui-foreground) / <alpha-value>)'
       },

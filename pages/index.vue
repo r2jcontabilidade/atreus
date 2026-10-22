@@ -9,43 +9,48 @@ useSeoMeta({
   description: page.value.description,
   ogDescription: page.value.description,
 })
+
+const section = {
+  ground: { wrapper: 'py-16 sm:py-28 bg-ground', container: 'gap-0' },
+  white: { wrapper: 'py-16 sm:py-28 bg-white', container: 'gap-0' },
+  dark: { wrapper: 'py-16 sm:py-28 bg-r2j-900', container: 'gap-0' },
+}
 </script>
 
 <template>
   <div>
-    <LandingHero>
-      <CldImage
-        src="r2j/capas/capa-00_y1kop9"
-        alt="R2J Contabilidade"
-        width="1223"
-        height="657"
-      />
-    </LandingHero>
-
-    <LandingSection id="quero-falar">
-      <QueroFalar v-bind="page.quero_falar" />
+    <LandingSection id="inicio" :ui="{ wrapper: 'py-12 sm:py-24 bg-ground', container: 'gap-0' }">
+      <Inicio v-bind="page.inicio" />
     </LandingSection>
 
-    <LandingSection id="contabilidade-digital">
+    <LandingSection id="contabilidade-digital" :ui="section.white">
       <ContabilidadeDigital v-bind="page.contabilidade_digital" />
     </LandingSection>
 
-    <LandingSection id="sobre-nos">
-      <SobreNos v-bind="page.sobre_nos" />
-    </LandingSection>
-
-    <LandingSection id="segmentos">
+    <LandingSection id="segmentos" :ui="section.dark">
       <Segmentos v-bind="page.segmentos" />
     </LandingSection>
 
-    <div id="profile">
-      <LandingSection v-for="(profile, index) in page.profiles" :key="index">
-        <Profile v-bind="profile" />
-      </LandingSection>
-    </div>
+    <LandingSection id="sobre-nos" :ui="section.ground">
+      <SobreNos v-bind="page.sobre_nos" />
+    </LandingSection>
 
-    <LandingSection id="nossos-clientes">
+    <LandingSection id="equipe" :ui="section.white">
+      <Profile
+        v-for="(profile, index) in page.equipe.profiles"
+        :key="index"
+        v-bind="profile"
+        :headline="index === 0 ? page.equipe.headline : ''"
+        :reverse="index % 2 === 1"
+      />
+    </LandingSection>
+
+    <LandingSection id="clientes" :ui="section.ground">
       <Clientes v-bind="page.clientes" />
+    </LandingSection>
+
+    <LandingSection id="quero-falar" :ui="{ wrapper: 'pb-16 sm:pb-28 bg-ground', container: 'gap-0' }">
+      <QueroFalar v-bind="page.quero_falar" />
     </LandingSection>
   </div>
 </template>

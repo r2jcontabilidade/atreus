@@ -1,37 +1,36 @@
 <template>
   <div :class="ui.wrapper" v-bind="attrs">
-    <div class="text-center sm:text-left sm:w-1/2">
-      <div :class="ui.title">
-        {{ title }}
-      </div>
-      <div class="mt-8">
+    <div :class="ui.content">
+      <h2 :class="ui.title">{{ title }}</h2>
+      <p :class="ui.description">{{ description }}</p>
+      <div :class="ui.links">
         <UButton
           :class="ui.link"
-          target="_blank"
           to="https://api.whatsapp.com/send?phone=5575981055945"
-          block
-        >
-          <UIcon name="i-simple-icons-whatsapp" />
-          {{ link.label }}
-        </UButton>
+          target="_blank"
+          size="xl"
+          color="white"
+          variant="solid"
+          icon="i-simple-icons-whatsapp"
+          :label="link.label"
+        />
+        <a :class="ui.phone" href="tel:+5575981055945">(75) 98105-5945</a>
       </div>
     </div>
-    <div>
-      <CldImage
-        src="r2j/capas/capa-01-2_ck6h80"
-        alt="R2J Contabilidade - Quero falar com um especialista"
-      />
-    </div>
+    <img :class="ui.image" :src="image.src" :alt="image.alt" width="253" height="555" />
   </div>
 </template>
 
 <script setup lang="ts">
-import type { Button } from '#ui/types'
-
 const config = {
-  wrapper: 'flex flex-col md:flex-row justify-between items-center gap-14 ',
-  title: 'text-4xl tracking-tight text-gray-900 dark:text-white sm:text-7xl',
-  link: 'font-bold md:text-[33px] sm:text-[33px] sm:leading-[70px] bg-[#2c8aa7] dark:bg-[#2c8aa7] dark:text-white hover:bg-[#2c8aa7] hover:opacity-80 dark:hover:bg-[#2c8aa7] dark:hover:opacity-80',
+  wrapper: 'flex flex-col md:flex-row overflow-hidden rounded-[32px] bg-r2j-900 text-[#E8F0F3]',
+  content: 'flex-[2] min-w-0 p-10 sm:p-16 lg:p-20 flex flex-col justify-center gap-6',
+  title: 'font-display font-semibold text-[32px] sm:text-5xl leading-[1.08] tracking-[-0.03em] text-white',
+  description: 'max-w-lg text-lg/relaxed text-mist',
+  links: 'flex flex-wrap items-center gap-x-6 gap-y-4',
+  link: 'px-7 font-bold text-r2j-900 ring-0',
+  phone: 'text-[17px] font-semibold text-[#E8F0F3] hover:text-white',
+  image: 'flex-1 min-w-0 max-h-[520px] w-full object-cover object-top',
 }
 
 defineOptions({
@@ -41,13 +40,17 @@ defineOptions({
 const props = withDefaults(
   defineProps<{
     title?: string
+    description?: string
     link?: any
+    image?: any
     ui?: Partial<typeof config>
     class?: any
   }>(),
   {
     title: '',
+    description: '',
     link: undefined,
+    image: undefined,
     ui: () => ({}),
     class: undefined,
   }

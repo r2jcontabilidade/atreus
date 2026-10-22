@@ -16,16 +16,20 @@ export default defineNuxtConfig({
   ui: {
     icons: ['heroicons', 'simple-icons'],
   },
+  colorMode: {
+    preference: 'light',
+  },
   css: ['~/assets/css/main.css', '~/assets/css/scrollbars.css'],
   // Fonts
   fontMetrics: {
-    fonts: ['Nunito'],
+    fonts: ['Figtree', 'Sora'],
   },
   googleFonts: {
     display: 'swap',
     download: true,
     families: {
-      Nunito: [400, 500, 600, 700],
+      Figtree: [400, 500, 600, 700],
+      Sora: [400, 500, 600, 700],
     },
   },
   // Images
