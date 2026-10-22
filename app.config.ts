@@ -1,18 +1,18 @@
 export default defineAppConfig({
   ui: {
-    primary: 'indigo',
+    primary: 'r2j',
     gray: 'zinc',
     variables: {
       light: {
-        background: 'var(--color-gray-50)',
-        foreground: 'var(--color-gray-700)'
+        background: '243 246 247',
+        foreground: '16 33 42'
       },
       dark: {
         background: 'var(--color-gray-950)',
         foreground: 'var(--color-gray-200)'
       },
       header: {
-        height: '4rem'
+        height: '4.75rem'
       }
     },
     icons: {
@@ -52,7 +52,7 @@ export default defineAppConfig({
       rounded: 'rounded-full',
       default: {
         size: 'md',
-        color: 'black'
+        color: 'primary'
       },
       icon: {
         size: {
@@ -64,21 +64,25 @@ export default defineAppConfig({
       rounded: 'rounded-full'
     },
     header: {
-      wrapper: 'lg:!border-transparent bg-cool-800 dark:bg-gray-950',
+      wrapper: 'bg-white/90 backdrop-blur border-b border-line',
+      button: {
+        base: 'lg:hidden text-ink'
+      },
       links: {
-        wrapper: 'ring-1 ring-gray-600 dark:ring-gray-800 px-3 gap-x-0 rounded-full',
-        base: 'py-2 px-4 font-bold transition-colors relative after:absolute after:-bottom-px after:inset-x-2 after:h-px after:rounded-full after:opacity-0 after:bg-white dark:after:bg-white after:transition-opacity',
-        active: 'text-white dark:text-white after:opacity-100',
-        inactive: 'text-gray-400 hover:text-gray-200 dark:text-gray-400 dark:hover:text-gray-200'
+        wrapper: 'gap-x-8',
+        base: 'py-2 text-[15px] font-semibold transition-colors relative after:absolute after:-bottom-0.5 after:inset-x-0 after:h-0.5 after:rounded-full after:opacity-0 after:bg-r2j-600 after:transition-opacity',
+        active: 'text-ink after:opacity-100',
+        inactive: 'text-[#33444D] hover:text-ink'
       }
     },
     footer: {
+      wrapper: 'relative bg-r2j-950 text-mist',
       top: {
-        wrapper: 'border-t border-gray-600',
-        container: 'py-8 lg:py-16'
+        container: 'py-16'
       },
       bottom: {
-        wrapper: 'border-t border-gray-600'
+        wrapper: 'border-t border-mist/20',
+        container: 'py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm'
       }
     }
   }

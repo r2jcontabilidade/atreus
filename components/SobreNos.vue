@@ -1,33 +1,37 @@
 <template>
   <div :class="ui.wrapper" v-bind="attrs">
-    <div class="sm:basis-1/3">
-      <div :class="ui.title">{{ title }}</div>
-      <div :class="ui.description">{{ description }}</div>
-      <div class="cta mt-8">
-        <UButton :class="ui.link" to="#profile" block>
-          {{ link.label }}
-        </UButton>
+    <div :class="ui.header">
+      <div class="flex-1 min-w-0 flex flex-col gap-4">
+        <span :class="ui.headline">{{ headline }}</span>
+        <h2 :class="ui.title">{{ title }}</h2>
       </div>
+      <p :class="ui.description">{{ description }}</p>
     </div>
-    <div class="sm:basis-2/3">
-      <CldImage
-        class="rounded-[16px]"
-        :src="image.src"
-        :alt="image.alt"
-        :rawTransformations="['c_pad,h_560,w_784']"
-      />
+
+    <div :class="ui.items">
+      <div v-for="(item, index) in items" :key="index" :class="ui.item.wrapper">
+        <UIcon :name="item.icon" :class="ui.item.icon" />
+        <h3 :class="ui.item.title">{{ item.title }}</h3>
+        <p :class="ui.item.description">{{ item.description }}</p>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const config = {
-  wrapper:
-    'relative flex flex-col sm:flex-row sm:flex-row-reverse justify-between items-center text-center sm:text-left gap-10',
-  title:
-    'text-2xl sm:text-[54px] font-bold tracking-tight text-[#2c8aa7] text-center sm:text-left',
-  description: 'mt-8 text-center sm:text-left text-lg/6 sm:text-2xl/9',
-  link: 'font-bold sm:text-2xl bg-[#2c8aa7] dark:bg-[#2c8aa7] dark:text-white hover:bg-[#2c8aa7] hover:opacity-80 dark:hover:bg-[#2c8aa7] dark:hover:opacity-80',
+  wrapper: 'flex flex-col gap-12',
+  header: 'flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-14',
+  headline: 'text-sm font-bold uppercase tracking-[0.12em] text-r2j-700',
+  title: 'font-display font-semibold text-[32px] sm:text-[46px] leading-[1.1] tracking-[-0.025em] text-ink',
+  description: 'flex-1 min-w-0 text-lg/relaxed text-muted',
+  items: 'grid grid-cols-1 md:grid-cols-3 gap-5',
+  item: {
+    wrapper: 'flex flex-col gap-3 p-8 rounded-[22px] bg-white border border-line',
+    icon: 'w-7 h-7 text-r2j-600',
+    title: 'mt-1 font-display text-xl font-semibold text-ink',
+    description: 'text-base/relaxed text-muted',
+  },
 }
 
 defineOptions({
@@ -36,20 +40,20 @@ defineOptions({
 
 const props = withDefaults(
   defineProps<{
+    headline?: string
     title?: string
     description?: string
+    items?: { icon: string, title: string, description: string }[]
     ui?: Partial<typeof config>
     class?: any
-    image?: any
-    link?: any
   }>(),
   {
+    headline: '',
     title: '',
     description: '',
+    items: () => [],
     ui: () => ({}),
     class: undefined,
-    image: undefined,
-    link: undefined,
   }
 )
 

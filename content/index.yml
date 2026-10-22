@@ -1,92 +1,96 @@
 title: R2J - Contabilidade
 description: A contabilidade digital é uma abordagem inovadora para a gestão financeira e contábil que utiliza tecnologia avançada e ferramentas digitais para coletar, processar, analisar e relatar informações financeiras conforme estabelecido em cada nicho.
-quero_falar:
-  title: O futuro do seu negócio depende de você!
+inicio:
+  headline: Contabilidade digital · Feira de Santana–BA
+  title: O futuro do seu negócio depende de você.
+  highlight: A contabilidade, deixa com a gente.
+  description: Conformidade fiscal, menos burocracia e dados contábeis claros para você tomar decisões estratégicas com segurança — do MEI à empresa estabelecida.
   link:
-    label: Quero falar com vocês!
+    label: Quero falar com vocês
+  secondary:
+    label: Ver segmentos
+    to: '#segmentos'
+  highlights:
+    - Atendimento 100% digital
+    - Especialistas na área da saúde
+    - Do MEI à empresa estabelecida
+  image:
+    src: /img/escritorio-rone.png
+    alt: Rone Ramos trabalhando no escritório da R2J, com a marca R2J Contabilidade Digital na tela ao fundo
+  card:
+    icon: i-heroicons-shield-check
+    title: Conformidade fiscal
+    description: Seu negócio em dia com as leis e regulamentações
 contabilidade_digital:
-  title: Você já ouviu falar em contabilidade Digital?
-  description: A contabilidade digital é uma abordagem inovadora para a gestão financeira e contábil que utiliza tecnologia avançada e ferramentas digitais para coletar, processar, analisar e relatar informações financeiras conforme estabelecido em cada nicho.
-  images:
-    - src: r2j/segmentos/1_gx5mzn
-      alt: Image alt text
-    - src: r2j/segmentos/2_oel8bp
-      alt: Image alt text
-    - src: r2j/segmentos/3_revdn2
-      alt: Image alt text
-    - src: r2j/segmentos/4_ihgjmy
-      alt: Image alt text
-    - src: r2j/segmentos/5_oesflb
-      alt: Image alt text
-    - src: r2j/segmentos/6_mmyl1w
-      alt: Image alt text
-    - src: r2j/segmentos/7_f6vyjf
-      alt: Image alt text
-    - src: r2j/segmentos/8_yoyoqx
-      alt: Image alt text
-sobre_nos:
-  title: Sobre Nós
-  description: Fundada acerca de princípios, a R2J, além de assegurar conformidade fiscal, proporciona uma excelente otimização burocrática e uma análise de dados contábeis para tomada de decisões estratégicas para o sucesso do seu negócio.
-  image: 
-    src: r2j/capas/capa-02_ruu7om
-    alt: Image alt text
-  link:
-    label: Saiba Mais >
-    size: sm
+  headline: Contabilidade digital
+  title: Você já ouviu falar em contabilidade digital?
+  description: Uma abordagem inovadora para a gestão financeira e contábil, que usa tecnologia e ferramentas digitais para coletar, processar, analisar e relatar as informações do seu negócio — conforme as regras de cada nicho.
+  image:
+    src: /img/contabilidade-digital-3.png
+    alt: Empreendedora sorrindo no balcão da sua loja
+  steps:
+    - title: Coletar
+      description: Notas, extratos e documentos chegam por canais digitais. Nada de papelada indo e voltando.
+    - title: Processar
+      description: Lançamentos, apurações e obrigações feitos com ferramentas que reduzem erro e retrabalho.
+    - title: Analisar
+      description: Os números do seu negócio lidos com o olhar de quem conhece o seu segmento.
+    - title: Relatar
+      description: Relatórios claros para você decidir os próximos passos com segurança.
 segmentos:
-  title: Segmentos
-  description: A R2J é uma empresa de contabilidade especializada em diversos segmentos, com o objetivo de atender as necessidades de cada cliente.
+  headline: Segmentos
+  title: Contabilidade sob medida para cada tipo de negócio
+  description: A R2J é especializada em diversos segmentos, com o objetivo de atender às necessidades de cada cliente.
   items:
     - icon: /img/segmento-mei.svg
       title: MEI
-      description: Criação, regularização, alteração, declaração anual e assessoria completa
-      bg: '#2B4857'
-      $class: py-10 sm:py-20 px-6 sm:px-16
+      description: Criação, regularização, alteração, declaração anual e assessoria completa.
     - icon: /img/segmento-profissionais-saude.svg
       title: Profissionais da Saúde
-      description: Especialidade no ramo da saúde, conforme complexidades regulatórias e fiscais específicas.
-      bg: '#2A3640'
-      $class: py-10 lg:py-20 px-6 lg:px-16
+      description: Especialidade no ramo da saúde, com atenção às complexidades regulatórias e fiscais específicas.
     - icon: /img/segmento-pessoal.svg
       title: Pessoal
-      description: Assessoria fiscal trabalhista completa.
-      bg: '#2A2C34'
-      $class: py-10 lg:py-20 px-6 lg:px-16
+      description: Assessoria fiscal e trabalhista completa.
     - icon: /img/segmento-comercio-vendas.svg
       title: Comércio e Vendas
       description: Abertura, regulamentação, fiscalização e cálculos trabalhistas.
-      bg: '#2B4857' 
-      $class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
     - icon: /img/segmento-assessoria-especializada.svg
       title: Assessoria Personalizada
       description: Planejamento tributário, declaração de IR, certificações e licenças.
-      bg: '#2A3640' 
-      $class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
     - icon: /img/sagmento-empresas-digitais.svg
       title: Empresas Digitais
-      description: Legalização, regulamentação, e assessoria personalizada.
-      bg: '#2A2C34'
-      $class: py-10 lg:pt-0 lg:pb-20 px-6 lg:px-16
-profiles:
-  - name: Júnior Almeida
-    reverse: false
-    descriptions:
-      - Desempenhamos o papel fundamental na manutenção da saúde financeira, garantindo conformidade com as leis fiscais e regulamentações de todo negócio.
-      - Facilitaremos a sua tomada de decisões estratégicas, fazendo com que o seu negócio otimize o crescimento e eficiencia operacional.
-    photo:
-      src: r2j/profiles/jr-03_es5kzk
-      alt: Image alt text
-  - name: Rone Ramos
-    reverse: true
-    descriptions:
-      - Profissional especializado no ramo da saúde, entendendo as complexidades regulatórias e fiscais específicas
-      - Oferecemos Expertise em gestão, e proporcionamos uma visão clara do que é crucial para a eficiência operacional e o sucesso sustentável no setor
-    photo:
-      src: r2j/profiles/rone-01_rj4zqb
-      alt: Image alt text
+      description: Legalização, regulamentação e assessoria personalizada.
+sobre_nos:
+  headline: Sobre nós
+  title: Fundada sobre princípios. Feita para o sucesso do seu negócio.
+  description: Além de assegurar a conformidade fiscal, a R2J proporciona otimização burocrática e análise de dados contábeis para a tomada de decisões estratégicas — para que você foque no que faz o seu negócio crescer.
+  items:
+    - icon: i-heroicons-shield-check
+      title: Conformidade fiscal
+      description: Seu negócio em dia com leis fiscais e regulamentações, sem sustos.
+    - icon: i-heroicons-clipboard-document-check
+      title: Menos burocracia
+      description: Processos otimizados para você gastar tempo com o seu negócio, não com papéis.
+    - icon: i-heroicons-chart-bar
+      title: Decisões com dados
+      description: Análise contábil que mostra o que é crucial para crescer com eficiência.
+equipe:
+  headline: Quem cuida do seu negócio
+  profiles:
+    - name: Rone Ramos
+      role: Especialista em contabilidade para a área da saúde
+      descriptions:
+        - Profissional especializado no ramo da saúde, que entende as complexidades regulatórias e fiscais específicas do setor.
+        - Oferecemos expertise em gestão e uma visão clara do que é crucial para a eficiência operacional e o sucesso sustentável do seu negócio.
+      photo:
+        src: r2j/profiles/rone-01_rj4zqb
+        alt: Rone Ramos, de terno, com os braços cruzados
+      link:
+        label: Agendar uma conversa
 clientes:
-  title: Alguns dos nossos Clientes
-  description: 'Desde o começo, prestamos serviços de confiança a nossos clientes. Tivemos a honra de sermos a empresa na escolha das seguintes corporações:'
+  headline: Clientes
+  title: Empresas que confiam na R2J
+  description: 'Desde o começo, prestamos serviços de confiança. Tivemos a honra de ser a escolha destas empresas:'
   items:
     - src: r2j/clientes/risodonto_q3j87e
       alt: Risodonto
@@ -122,6 +126,13 @@ clientes:
       alt: Nossa Clínica
       transform: 'c_crop,h_770,w_1000/b_auto:border_gradient:2:horizontal,c_pad,h_240,w_312'
     - src: r2j/clientes/acai-tropicale_cevudt
-      alt: Acaí Tropicale
+      alt: Açaí Tropicale
       transform: 'c_pad,h_240,w_312'
-    
+quero_falar:
+  title: Transformando seu empreendimento em sucesso.
+  description: Conte para a gente sobre o seu negócio. Respondemos pelo WhatsApp, telefone ou e-mail.
+  link:
+    label: Quero falar com vocês
+  image:
+    src: /img/rone-caneca.png
+    alt: Rone Ramos segurando uma caneca da R2J no escritório
